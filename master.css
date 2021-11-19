@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+}
+
+
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+
+/* header */
+
+header {
+    background-color: black;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 13px;
+    z-index: 6;
+}
+
+.upgrade {
+    color: white;
+    border: 1px white solid;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+
+/* main */
+
+main {
+    background-color: rgb(20, 20, 20);
+    width: calc(100vw - 350px);
+    height: calc(100vh - 100px);
+    position: fixed;
+    right: 0;
+    top: 0px;
+    overflow-y: scroll;
+    color: white;
+    padding-top: 100px;
+}
+
+.pippo nav {
+    display: flex;
+    justify-content: center;
+}
+
+.pippo nav ul {
+    display: flex;
+}
+
+.pippo nav ul li {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: calc(100% / 6 - 15px);
+    text-align: center;
+}
+
+.wrap-img img {
+    width: 100%;
+}
+
+
+/* aside */
+
+aside {
+    background-color: black;
+    width: 350px;
+    height: calc(100vh - 100px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    z-index: 7;
+}
+
+.menu {
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.logo {
+    height: 70px;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.user {
+    width: 100%;
+    padding: 20px;
+}
+
+.navigation {
+    padding-top: 10px;
+}
+
+.navigation ul li {
+    margin-top: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid white;
+}
+
+.navigation ul li img {
+    width: 30px;
+    margin: 0 20px;
+}
+
+.playlist p {
+    font-size: 20px;
+    padding: 20px 0 0px 20px;
+}
+
+.crea-playlist {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 5px 20px;
+}
+
+.crea-playlist p {
+    font-size: 12px;
+    padding: 0;
+}
+
+.fas.fa-plus-square {
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.playlist ul li {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.downloads {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px white solid;
+}
+
+.fas.fa-arrow-circle-down {
+    font-size: 12px;
+}
+
+.downloads p {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.fas.fa-user-circle {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.profile p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #282828;
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.section-left {
+    display: flex;
+    align-items: center;
+}
+
+.container-img img {
+    width: 50px;
+    margin: 15px;
+}
+
+.nome-brano p {
+    font-size: 15px;
+    margin-right: 130px;
+}
+
+.far.fa-heart,
+.far.fa-folder {
+    font-size: 20px
+}
+
+.section-center {
+    width: 400px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trace {
+    display: flex;
+    font-size: 10px;
+    width: 400px;
+    align-items: center;
+}
+
+.line-clear {
+    width: 90%;
+    height: 5px;
+    background-color: silver;
+    margin: 0px 10px;
+}
+
+.line-dark {
+    width: 15%;
+    height: 100%;
+    background-color: slategrey;
+}
+
+.buttons-play {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-play i {
+    margin: 20px 10px;
+}
+
+.far.fa-play-circle {
+    font-size: 35px;
+}
+
+.section-right {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.options i {
+    margin: 0 5px;
+}
+
+.volume {
+    width: 150px;
+}
+
+
+/* media-aside XS */
+
+@media all and (max-width: 425px) {
+    aside {
+        width: 60px;
+    }
+    .logo img {
+        display: none;
+    }
+    .navigation {
+        padding: 5px 15px;
+    }
+    .navigation ul li span {
+        display: none;
+    }
+    .navigation ul li img {
+        margin: 0;
+    }
+    .navigation ul li {
+        border: none;
+    }
+    .playlist {
+        display: none;
+    }
+    .downloads {
+        border: none;
+        padding: 0 23px;
+    }
+    .downloads p {
+        display: none;
+    }
+    .profile {
+        padding: 15px 15px;
+    }
+    .profile p {
+        display: none;
+    }
+    .user {
+        padding: 0;
+    }
+    /* media-main XS */
+    main {
+        background-color: rgb(20, 20, 20);
+        min-width: calc(100vw - 60px);
+        height: calc(100vh - 100px);
+        position: fixed;
+        right: 0;
+        top: 0px;
+        overflow-y: scroll;
+        color: white;
+        padding-top: 100px;
+    }
+    .pippo section nav ul li {
+        font-size: 10px;
+    }
+}
